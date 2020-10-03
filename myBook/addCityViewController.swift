@@ -46,7 +46,7 @@ class addCityViewController: UIViewController, UIImagePickerControllerDelegate &
       
             if let name = cityName.text, let info = cityInfo.text, let image = cityImage.image , let price = cityPrice.text, let fampoint = cityFam.text, let rating = cityRating.text{
                 
-                if let imagedata = image.jpegData(compressionQuality: 0.1){
+                if let imagedata = image.jpegData(compressionQuality: 0.5){
                     
                     Data.cityName = name
                     Data.cityIntro = info
