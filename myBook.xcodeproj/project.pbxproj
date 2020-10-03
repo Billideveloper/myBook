@@ -15,6 +15,8 @@
 		1840DBFA2527039800B0A8EC /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840DBF92527039800B0A8EC /* model.swift */; };
 		1840DBFF2527059400B0A8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1840DBFE2527059300B0A8EC /* Main.storyboard */; };
 		1840DC032527064000B0A8EC /* addCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840DC022527064000B0A8EC /* addCityViewController.swift */; };
+		1840DC062527205900B0A8EC /* cityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840DC052527205900B0A8EC /* cityTableViewCell.swift */; };
+		187DCFCA252788CA00F85079 /* dataconverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DCFC9252788CA00F85079 /* dataconverter.swift */; };
 		CDACF58AABCB93065FBFC9A8 /* Pods_myBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0D9F26C32B5D64A64F6637 /* Pods_myBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		1840DBF92527039800B0A8EC /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		1840DBFE2527059300B0A8EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1840DC022527064000B0A8EC /* addCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCityViewController.swift; sourceTree = "<group>"; };
+		1840DC052527205900B0A8EC /* cityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityTableViewCell.swift; sourceTree = "<group>"; };
+		187DCFC9252788CA00F85079 /* dataconverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataconverter.swift; sourceTree = "<group>"; };
 		33AC1B9B5D7253DEDD44E854 /* Pods-myBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBook.debug.xcconfig"; path = "Target Support Files/Pods-myBook/Pods-myBook.debug.xcconfig"; sourceTree = "<group>"; };
 		BD98775C7AA943858346D7E9 /* Pods-myBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBook.release.xcconfig"; path = "Target Support Files/Pods-myBook/Pods-myBook.release.xcconfig"; sourceTree = "<group>"; };
 		CD0D9F26C32B5D64A64F6637 /* Pods_myBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				1840DBF92527039800B0A8EC /* model.swift */,
+				1840DC052527205900B0A8EC /* cityTableViewCell.swift */,
+				187DCFC9252788CA00F85079 /* dataconverter.swift */,
 			);
 			path = myModel;
 			sourceTree = "<group>";
@@ -222,7 +228,9 @@
 				1840DBDF2526FB4200B0A8EC /* ViewController.swift in Sources */,
 				1840DBDB2526FB4200B0A8EC /* AppDelegate.swift in Sources */,
 				1840DC032527064000B0A8EC /* addCityViewController.swift in Sources */,
+				187DCFCA252788CA00F85079 /* dataconverter.swift in Sources */,
 				1840DBDD2526FB4200B0A8EC /* SceneDelegate.swift in Sources */,
+				1840DC062527205900B0A8EC /* cityTableViewCell.swift in Sources */,
 				1840DBFA2527039800B0A8EC /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

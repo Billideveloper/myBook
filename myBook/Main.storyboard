@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tasks" rowHeight="348" id="xKd-5E-6sc" customClass="cityTableViewCell" customModule="myBook" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="city" rowHeight="348" id="xKd-5E-6sc" customClass="cityTableViewCell" customModule="myBook" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="348"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xKd-5E-6sc" id="G8v-2U-tiT">
@@ -28,10 +28,10 @@
                                             <rect key="frame" x="20" y="11" width="374" height="326"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectImage" translatesAutoresizingMaskIntoConstraints="NO" id="hSS-cd-fdH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="241"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="281"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-Aq-jxk">
-                                                    <rect key="frame" x="0.0" y="251" width="374" height="25"/>
+                                                    <rect key="frame" x="0.0" y="291" width="374" height="25"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNF-Od-kx3">
                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="25"/>
@@ -44,7 +44,7 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rajwada" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZD-9J-rS8">
                                                             <rect key="frame" x="60" y="0.0" width="264" height="25"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -64,10 +64,10 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veI-0q-olz">
-                                                    <rect key="frame" x="0.0" y="286" width="374" height="40"/>
+                                                    <rect key="frame" x="0.0" y="326" width="374" height="0.0"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWV-kk-5A1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="0.0"/>
                                                             <string key="text">The city is very popular and known as the mini mumbai but it's exploring as a new tech city in india which will become one day a more popular</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
@@ -75,18 +75,15 @@
                                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAx-fg-dGE">
-                                                            <rect key="frame" x="314" y="0.0" width="60" height="40"/>
+                                                            <rect key="frame" x="314" y="0.0" width="60" height="0.0"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="cty-Re-fny"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="esE-OP-wxj"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -102,17 +99,18 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="averageCost" destination="FAx-fg-dGE" id="86T-qt-81W"/>
-                                    <outlet property="cityImage" destination="hSS-cd-fdH" id="W6j-4n-2NU"/>
-                                    <outlet property="cityName" destination="fNF-Od-kx3" id="WaB-4r-14J"/>
-                                    <outlet property="cityRating" destination="XkJ-ur-6BW" id="5YN-aP-QOK"/>
-                                    <outlet property="famPoint" destination="3ZD-9J-rS8" id="ZPI-NK-reO"/>
+                                    <outlet property="cityCost" destination="FAx-fg-dGE" id="XeG-HB-R8n"/>
+                                    <outlet property="cityFam" destination="3ZD-9J-rS8" id="Us7-id-yv8"/>
+                                    <outlet property="cityImage" destination="hSS-cd-fdH" id="iiJ-z8-qyd"/>
+                                    <outlet property="cityInfo" destination="dWV-kk-5A1" id="aI4-jq-f76"/>
+                                    <outlet property="cityName" destination="fNF-Od-kx3" id="8lT-rE-4JW"/>
+                                    <outlet property="cityRating" destination="XkJ-ur-6BW" id="luC-w3-3Gv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="t5G-hk-WBR" id="lzx-pw-or6"/>
-                            <outlet property="delegate" destination="t5G-hk-WBR" id="O4W-W0-j4L"/>
+                            <outlet property="dataSource" destination="t5G-hk-WBR" id="wTk-2g-5sD"/>
+                            <outlet property="delegate" destination="t5G-hk-WBR" id="VGa-aQ-5hr"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Travel Diaries" id="x3i-62-Ztu">
@@ -123,6 +121,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="Wsv-Kj-qbp" id="0mK-j0-UKa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8P-rN-QbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

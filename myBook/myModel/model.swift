@@ -10,11 +10,14 @@ import RealmSwift
 
 class Book: Object {
     
-    @objc var cityName = ""
-    @objc var cityIntro = ""
-    @objc var cityFam = ""
-    @objc var cityImages: NSData?
-    @objc var cityPrice = ""
-    @objc var cityRating = 0.0
+    @objc dynamic var cityName = ""
+    @objc dynamic var cityIntro = ""
+    @objc dynamic var cityFam = ""
+    @objc dynamic var cityImages: NSData?
+    @objc dynamic var cityPrice = ""
+    @objc dynamic var cityRating = 0.0
+    
+    
+    
     
 }

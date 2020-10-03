@@ -10,6 +10,7 @@ import RealmSwift
 
 class addCityViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
+    var excistinfcity: Book?
     
     @IBOutlet var selectImage: UITapGestureRecognizer!
     
@@ -27,6 +28,9 @@ class addCityViewController: UIViewController, UIImagePickerControllerDelegate &
     
     let picker = UIImagePickerController()
     
+    let Data = Book()
+    
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,30 +44,28 @@ class addCityViewController: UIViewController, UIImagePickerControllerDelegate &
         
         //MARK: - save to Realm database
       
-        var newcity: Book!
-        newcity = Book()
-        
-        if let name = cityName.text, let info = cityInfo.text, let image = cityImage.image , let price = cityPrice.text, let fampoint = cityFam.text, let rating = cityRating.text{
-            
-            if let imagedata = image.jpegData(compressionQuality: 0.1){
+            if let name = cityName.text, let info = cityInfo.text, let image = cityImage.image , let price = cityPrice.text, let fampoint = cityFam.text, let rating = cityRating.text{
                 
-                newcity.cityName = name
-                newcity.cityIntro = info
-                newcity.cityImages = imagedata as NSData
-                newcity.cityFam = fampoint
-                newcity.cityPrice = price
-                newcity.cityRating = (rating as NSString).doubleValue
+                if let imagedata = image.jpegData(compressionQuality: 0.1){
+                    
+                    Data.cityName = name
+                    Data.cityIntro = info
+                    Data.cityImages = imagedata as NSData
+                    Data.cityFam = fampoint
+                    Data.cityPrice = price
+                    Data.cityRating = (rating as NSString).doubleValue
+                    
+                }
                 
             }
             
-        }
+            //got data in block now save to realm
+            
+            try? realm.write{
+                realm.add(Data)
+            }
+            
         
-        //got data in block now save to realm
-        
-        let realm = try? Realm()
-        try? realm?.write{
-            realm?.add(newcity)
-        }
         
         
         navigationController?.popToRootViewController(animated: true)
