@@ -26,6 +26,7 @@ class ViewController: UITableViewController {
         
         getdata()
         
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         //print(relamsaveddata)
     
     }
@@ -59,10 +60,18 @@ class ViewController: UITableViewController {
         return data
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 348
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 450
+//    }
     
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        var height = self.tableview.estimatedRowHeight
+        height = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 460
+        
+        return height
+    }
 
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        return 400
